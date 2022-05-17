@@ -12,8 +12,8 @@
     "nodemon": "2.0.16"
   },
   "scripts": {
-    "start": "cross-env HOST=saturn.rochesterschools.org node main.js",
-    "devstart": "cross-env HOST=localhost nodemon -e js main.js",
+    "start": "npm i && cross-env HOST=saturn.rochesterschools.org node main.js",
+    "devstart": "npm i && cross-env HOST=localhost nodemon -e js main.js",
     "clearDb": "node clearDb.js"
   },
   "nodemonConfig": {
